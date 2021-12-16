@@ -1,0 +1,284 @@
+@import url(../styles/animate.css);
+
+*, html, body{
+    height: auto;
+    width: 100%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+header{
+    width: 100%;
+    height: 856px;
+    background-image: url(./img/Group5.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+footer{
+    margin-top: 10%;
+    width: 100%;
+    height: fit-content;
+    padding: 5%;
+    background-image: url(./img/Group5.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+/*
+=====================
+    Navbar Section
+=====================
+*/
+.navbar{
+    width: 100%;
+    padding: 2%;
+    display: inline-flex;
+    position: fixed;
+    justify-content: space-between;
+    top: 0;
+    z-index: 999;
+    color: whitesmoke;
+}
+
+.navbar ul{
+    display: flex;
+    z-index: 999;
+}
+
+.navbar .navbar-nav{
+    font-size: xx-large;
+    font-weight: 600;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.info h1{
+    border: white;
+    border-width: thick 20px;
+}
+.info{
+    margin-top: 10%;
+    color: white;
+    margin-left: 10px;
+}
+.info p{
+    width: 80%;
+}
+
+.navbar ul li{
+    margin-left: 25px;
+    margin-right: 25px;
+    text-transform: uppercase;
+    text-decoration: none;
+    list-style: none;
+    font-weight: 500;
+}
+.sInfo .btn{
+    padding: 7%;
+    border-radius: 40px;
+    width: 200px; 
+    margin-left: 10px;
+    border: none;
+    background-color: transparent;
+    box-shadow: 2px 2px 1px white;
+    color: white;
+    cursor: pointer;
+}
+.btn{
+    padding: 2%;
+    border-radius: 5px;
+    width: fit-content;
+    border: rgb(71, 71, 71) solid 0.4px;
+}
+.navbar .btn{
+    display: none;
+    background-color: transparent;
+    height: 50px;
+    width: 50px;
+}
+.navbar .btn:active{
+    border-color: turquoise;
+    /* transition: 1s; */
+}
+/*
+======================
+    hero section
+======================
+*/
+.d-flex{
+    display: flex;
+    justify-content: space-between;
+    /* padding: 2%; */
+}
+
+.d-flex .hero{
+    background-image: url(./img/hero-img.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10%;
+    width: 100%;
+    height: auto;
+}
+
+.d-flex .hero .peter{
+    background-image: url(./img/peter.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+}
+
+/*
+===========
+Others
+===========
+*/
+.aboutme{
+    background-color: white;
+    padding-top: 10%;
+    margin-top: -23%;
+    border-top-right-radius: 20%;
+    border-top-left-radius: 20%;
+    z-index: 500;
+}
+.container .d-flex .service, .avater, .aboutMe{
+    height: auto;
+    /* width: 350px; */
+}
+.d-flex .service{
+    background-image: url(./img/skilss.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    flex: 1;
+    z-index: 0;
+
+}
+.d-flex .avater{
+    background-image: url(./img/Saly-10.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex: 1;
+    margin-top: -10%;
+    width: 450px;
+    height: 472px;
+}
+.d-flex .aboutMe{
+    /* width: fit-content; */
+    flex: 1;
+    height: auto;
+    color: rgb(119, 117, 117);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: normal;
+    word-spacing: normal;
+    font-size: small;
+}
+.allInfo{
+    padding-top: 8%;
+    padding-left: 5%;
+}
+
+/* Media Queries */
+@media screen and (max-width:600px) {
+    *, html, body{
+        height: auto;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .d-flex {
+        flex-direction: column;
+    }
+    .sInfo {
+        flex-direction: row;
+        margin-top: 10px;
+    }
+    .navbar ul{
+        display: none;
+        flex-direction: column;
+        background-color: #3C5EEE;
+        /* transition: ease 3s; */
+        padding: 5%;
+    }
+    .allInfo{
+        padding-top: 20%;
+        padding-left: 5%;
+    }
+    .navbar ul li{
+        margin: 2%;
+    }
+    .aboutme{
+        background-color: white;
+        padding-top: 15%;
+        margin-top: -55%;
+        border-top-right-radius: 15%;
+        border-top-left-radius: 0%;
+        z-index: 500;
+    }
+    .navbar{
+        display: block;
+        padding: 4%;
+    }
+    .navbar .btn{
+        display: block; 
+        float: right;
+    }
+    header{
+        width: 100%;
+        /* width: 100vw; */
+        height: 856px;
+        /* padding: 10%; */
+        background-image: url(./img/Group5.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .d-flex .hero .peter{
+        background-image: url(./img/peter.jfif);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 200px;
+        height: 200px;
+        margin-top: 12%;
+        margin-left: 15%;
+    }
+
+    /* services */
+    .aboutme .d-flex{
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+    .d-flex .service{
+        background-image: url(./img/skilss.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        flex: 1;  
+        padding: 25%; 
+        padding-left: 30%;
+        align-self: center;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+    .d-flex .avater{
+        background-image: url(./img/Saly-10.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        flex: 1;
+        margin-left: 0;
+        margin-top: -10;
+        padding: 30%; 
+        /* padding-left: 30%; */
+        /* height: 500px;
+        width: 100%; */
+    }
+    .d-flex .aboutMe{
+        /* width: fit-content; */
+        flex: 1;
+        height: auto;
+        color: rgb(119, 117, 117);
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        letter-spacing: normal;
+        word-spacing: normal;
+        font-size: small;
+    }
+}
