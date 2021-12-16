@@ -33,9 +33,9 @@ export default function Home() {
           <div className="d-flex allInfo">
             <div className="info">
 
-              <h3 style={{fontWeight:'400'}}>HELLO, I'M PETER</h3>
+              <h3 style={{fontWeight:'400'}}>HELLO, I&apos;M PETER</h3>
               <h1 className="h1">FULL STACK DEVELOPER</h1>
-              <p>Full-time Fullstack Developer based in Nigeria, Let's connect..</p>
+              <p>Full-time Fullstack Developer based in Nigeria, Let&apos;s connect..</p>
 
               <div className="d-flex sInfo" style={{width:"200px", marginLeft:"20px"}}>
                 <button className="btn" style={{backgroundColor:"#fff", color:"blue"}}>Hire Me</button>
